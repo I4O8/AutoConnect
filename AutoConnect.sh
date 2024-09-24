@@ -8,7 +8,6 @@ PASSWORD=""
 LOGIN_IP="172.16.30.98"
 
 IP_ADDRESS=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]{1,3}\.){3}[0-9]{1,3}' | grep -v '127.0.0.1' | awk '{print $2; exit}' | sed 's/addr://')
-UA="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0"
 
 URL1="http://${LOGIN_IP}:801/eportal/?c=ACSetting&a=Login&protocol=http:&hostname=${LOGIN_IP}&iTermType=1&wlanuserip=${IP_ADDRESS}&wlanacip=null&wlanacname=null&mac=00-00-00-00-00-00&ip=${IP_ADDRESS}&enAdvert=0&queryACIP=0&jsVersion=2.4.3&loginMethod=1"
 GET="DDDDD=${USERNAME}&upass=${PASSWORD}&R1=0&R2=0&R3=0&R6=0&para=00&0MKKey=123456&buttonClicked=&redirect_url=&err_flag=&username=&password=&user=&cmd=&Login=&v6ip="
