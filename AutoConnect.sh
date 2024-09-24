@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #填入帐号密码
-USERNAME="2023002911"
-PASSWORD="189233"
+USERNAME=""
+PASSWORD=""
 
 #不同校区登陆ip可能不一样，这里只试了南区
 LOGIN_IP="172.16.30.98"
