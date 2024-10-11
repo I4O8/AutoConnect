@@ -117,7 +117,7 @@ int main() {
     std::cin >> USERNAME;
     std::cout << "密码: ";
     std::cin >> PASSWORD;
-    std::cout << "地址: ";
+    std::cout << "登录ip地址: ";
     std::cin >> LOGIN_IP;
     saveConfig(USERNAME, PASSWORD, LOGIN_IP);
   }
