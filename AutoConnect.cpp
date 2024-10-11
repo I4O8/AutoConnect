@@ -165,11 +165,5 @@ int main() {
 
   std::this_thread::sleep_for(std::chrono::seconds(2));
   std::string response = post(url2, cont);
-
-  std::cout << url2 << std::endl
-            << ACNAME << std::endl
-            << ACIP << std::endl
-            << cont;
-
   return 0;
 }
